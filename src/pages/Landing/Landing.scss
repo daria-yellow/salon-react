@@ -1,0 +1,19 @@
+@media (max-width: 1024px) {
+  .landing {
+    img[alt="Woman"] {
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      object-position: 30%;
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .landing {
+    img[alt="Woman"] {
+      aspect-ratio: 1;
+      object-fit: cover;
+      object-position: 30%;
+    }
+  }
+}

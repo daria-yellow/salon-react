@@ -1,0 +1,88 @@
+@import "./fonts.scss";
+@import "../components/index.scss";
+@import "../pages/index.scss";
+
+:root {
+  //colors
+  --white-default: #fefefe;
+  --white-darker: #f8f8f8;
+  --white-darkest: #f8f8f8;
+
+  --black-default: #282828;
+  --black-lighter: #949494;
+  --black-lightest: #eaeaea;
+
+  --primary-default: #e90000;
+  --primary-lighter: #ed3333;
+  --primary-lightest: #f26666;
+
+  --link-color: #3482fc;
+
+  //paddings
+  --desktop-padding: calc(100% / 13);
+  --desktop-double-padding: calc(var(--desktop-padding) * 2);
+  --desktop-tripple-padding: calc(var(--desktop-padding) * 3);
+
+  --tablet-padding: calc(100% / 15);
+  --tablet-double-padding: calc(var(--desktop-padding) * 2);
+  --tablet-tripple-padding: calc(var(--desktop-padding) * 3);
+
+  --mobile-padding: calc(100% / 19);
+  --mobile-double-padding: calc(var(--desktop-padding) * 2);
+  --mobile-tripple-padding: calc(var(--desktop-padding) * 3);
+
+  //font-styles
+  --header-style: "Source Serif Pro";
+  --text-style: "Source Sans Pro", sans-serif;
+  --footer-style: "Source Serif Pro";
+
+  //font-size
+  --desktop-h1: 40px;
+  --desktop-h2: 36px;
+  --desktop-h3: 32px;
+
+  --desktop-t1: 24px;
+  --desktop-t2: 20px;
+  --desktop-t3: 18px;
+  --desktop-t4: 14px;
+
+  --desktop-footer: 14px;
+
+  --mobile-h1: 18px;
+  --mobile-h2: 16px;
+  --mobile-h3: 14px;
+
+  --mobile-t1: 14px;
+  --mobile-t2: 12px;
+  --mobile-t3: 10px;
+  --mobile-t4: 8px;
+
+  --mobile-footer: 8px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--white-default);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body > #root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

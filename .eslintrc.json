@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "standard-with-typescript",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "@typescript-eslint/strict-boolean-expressions": 0,
+    "@typescript-eslint/quotes": [2, "single"],
+    "@typescript-eslint/comma-dangle": 0,
+    "@typescript-eslint/semi": 0,
+    "@typescript-eslint/member-delimiter-style": 0,
+    "@typescript-eslint/space-before-function-paren": 0,
+    "@typescript-eslint/no-floating-promises": [0, "ignoreVoid"],
+    "@typescript-eslint/prefer-nullish-coalescing": 0
+  },
+  "ignorePatterns": ["webpack.*", "*.d.ts"]
+}

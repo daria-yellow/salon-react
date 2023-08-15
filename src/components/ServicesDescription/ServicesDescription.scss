@@ -1,0 +1,128 @@
+.services-description {
+  padding: 120px var(--desktop-double-padding);
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    ul {
+      width: 100%;
+      text-align: center;
+      list-style-position: inside;
+      margin: 0;
+      padding: 0;
+
+      li::marker {
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  &__red-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border: 1px solid var(--primary-default);
+    border-radius: 50%;
+    background-color: var(--white-default);
+  }
+
+  &__black-circle {
+    background-image: url("../../images/services/ServicesBackground.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    border: 2px solid var(--black-default);
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-description {
+    padding: 100px var(--tablet-padding);
+
+    &__icons {
+      padding-bottom: 60px;
+    }
+
+    &__red-circle {
+      width: 80px;
+      height: 80px;
+    }
+
+    &__black-circle {
+      width: 95px;
+      height: 95px;
+      border: 1px solid var(--black-default);
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .services-description {
+    padding: 70px var(--tablet-padding);
+
+    &__icons {
+      padding-bottom: 40px;
+    }
+
+    &__red-circle {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__black-circle {
+      width: 74px;
+      height: 74px;
+      border: 1px solid var(--black-default);
+    }
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .services-description {
+    padding: 50px var(--mobile-padding);
+
+    &__icons {
+      padding-bottom: 20px;
+    }
+
+    &__red-circle {
+      width: 44px;
+      height: 44px;
+    }
+
+    &__black-circle {
+      width: 54px;
+      height: 54px;
+      border: 1px solid var(--black-default);
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

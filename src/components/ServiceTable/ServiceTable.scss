@@ -1,0 +1,140 @@
+.service-table {
+  text-align: center;
+  width: 100%;
+
+  &__title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 50px 0;
+
+    svg {
+      transform: rotate(-90deg);
+      margin: auto;
+    }
+
+    &-opened {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-table {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      &-item {
+        display: flex;
+        width: 100%;
+
+        :first-child {
+          display: flex;
+          justify-content: flex-start;
+          width: 70%;
+          text-align: left;
+        }
+
+        :nth-child(2) {
+          display: flex;
+          justify-content: flex-end;
+          width: 10%;
+        }
+
+        :last-child {
+          width: 20%;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    &-add-info {
+      display: flex;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    &-line {
+      width: 100%;
+      height: 2px;
+      background-color: var(--primary-lightest);
+    }
+  }
+
+  &__subservices {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .service-table {
+    &__content {
+      gap: 24px;
+    }
+
+    &__title {
+      gap: 15px;
+      margin: 40px 0;
+
+      svg {
+        width: 18px;
+      }
+    }
+
+    &__subservices {
+      gap: 24px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .service-table {
+    &__content {
+      gap: 18px;
+
+      &-line {
+        height: 1px;
+      }
+    }
+
+    &__title {
+      gap: 10px;
+      margin: 30px 0;
+    }
+
+    &__subservices {
+      gap: 18px;
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .service-table {
+    &__content {
+      gap: 14px;
+    }
+
+    &__title {
+      margin: 25px 0;
+      gap: 5px;
+
+      svg {
+        width: 10px;
+      }
+    }
+
+    &__subservices {
+      gap: 14px;
+    }
+  }
+}

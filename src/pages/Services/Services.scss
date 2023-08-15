@@ -1,0 +1,19 @@
+.services {
+  padding: 0 var(--desktop-tripple-padding);
+  white-space: pre-line;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .services {
+    padding: 0 var(--tablet-padding);
+  }
+}
+
+@media (max-width: 568px) {
+  .services {
+    padding: 0 var(--mobile-padding);
+  }
+}

@@ -1,0 +1,34 @@
+.staff {
+  padding: 0 var(--desktop-padding);
+  box-sizing: border-box;
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .staff {
+    padding: 0 var(--tablet-padding);
+    &__cards {
+      gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .staff {
+    &__cards {
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .staff {
+    padding: 0 var(--mobile-padding);
+  }
+}
