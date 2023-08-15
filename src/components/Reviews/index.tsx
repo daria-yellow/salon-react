@@ -5,6 +5,7 @@ import Carousel from 'react-material-ui-carousel';
 import { useHttpClient } from '../../hooks/http-hook';
 import { type ReviewType } from '../../types';
 import { TitleText } from '../TitleText';
+import ReviewsBackground from '../../images/ReviewsBackground.png';
 
 export const Reviews: React.FC = () => {
   const { sendRequest } = useHttpClient();
@@ -21,7 +22,12 @@ export const Reviews: React.FC = () => {
   }, [sendRequest]);
 
   return (
-    <div className="reviews">
+    <div
+      className="reviews"
+      style={{
+        backgroundImage: `url(${ReviewsBackground})`,
+      }}
+    >
       <TitleText text={<FormattedMessage id="page.landing.reviews.title" />} />
       <Carousel
         indicators={false}

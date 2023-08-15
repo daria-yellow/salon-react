@@ -14,7 +14,6 @@ export const OurWorks: React.FC = () => {
     const fetchGallery: () => Promise<void> = async () => {
       try {
         const responseData = await sendRequest('/gallery');
-        console.log(responseData)
         setGallery(responseData);
       } catch (err) {}
     };

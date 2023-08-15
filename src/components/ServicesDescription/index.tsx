@@ -6,11 +6,17 @@ import MakeUpLogo from '../../images/services/MakeUp.svg';
 import ManicureLogo from '../../images/services/Manicure.svg';
 import MassageLogo from '../../images/services/Massage.svg';
 import ScissorsLogo from '../../images/services/Scissors.svg';
+import ServicesBackground from '../../images/services/ServicesBackground.jpg';
 
 export const ServicesDescription: React.FC = () => {
   const renderLogo = useCallback((logo: string) => {
     return (
-      <div className="services-description__black-circle">
+      <div
+        className="services-description__black-circle"
+        style={{
+          backgroundImage: `url(${ServicesBackground})`,
+        }}
+      >
         <div className="services-description__red-circle">
           <img src={logo} alt={`${logo.split('.')[0].split('/')[3]}`}></img>
         </div>

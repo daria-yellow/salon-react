@@ -1,8 +1,8 @@
-import type React from "react";
-import { useEffect, useState } from "react";
-import { InfoCard } from "../../components";
-import { useHttpClient } from "../../hooks/http-hook";
-import { type InfoCardType } from "../../types";
+import type React from 'react';
+import { useEffect, useState } from 'react';
+import { InfoCard } from '../../components';
+import { useHttpClient } from '../../hooks/http-hook';
+import { type InfoCardType } from '../../types';
 
 const Staff: React.FC = () => {
   const { sendRequest } = useHttpClient();
@@ -11,7 +11,7 @@ const Staff: React.FC = () => {
   useEffect(() => {
     const fetchEmployees: () => Promise<void> = async () => {
       try {
-        const responseData = await sendRequest("/staff/employees");
+        const responseData = await sendRequest('/staff/employees');
         setEmployees(responseData);
       } catch (err) {}
     };

@@ -9,12 +9,12 @@ import {
 import { Footer, Header } from "./components";
 import { textInfo } from "./info/TextInfo";
 
-const Landing = React.lazy(() => import("./pages/Landing/index"));
-const AboutUs = React.lazy(() => import("./pages/AboutUs/index"));
-const Services = React.lazy(() => import("./pages/Services/index"));
-const Staff = React.lazy(() => import("./pages/Staff/index"));
-const Contacts = React.lazy(() => import("./pages/Contacts/index"));
-const Gallery = React.lazy(() => import("./pages/Gallery/index"));
+const Landing = React.lazy(async () => await import("./pages/Landing/index"));
+const AboutUs = React.lazy(async () => await import("./pages/AboutUs/index"));
+const Services = React.lazy(async () => await import("./pages/Services/index"));
+const Staff = React.lazy(async () => await import("./pages/Staff/index"));
+const Contacts = React.lazy(async () => await import("./pages/Contacts/index"));
+const Gallery = React.lazy(async () => await import("./pages/Gallery/index"));
 
 export const App: React.FC = () => {
   return (

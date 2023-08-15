@@ -1,7 +1,7 @@
-import type React from "react";
-import { useEffect, useState } from "react";
-import { useHttpClient } from "../../hooks/http-hook";
-import { type GalleryImageType } from "../../types";
+import type React from 'react';
+import { useEffect, useState } from 'react';
+import { useHttpClient } from '../../hooks/http-hook';
+import { type GalleryImageType } from '../../types';
 
 const Gallery: React.FC = () => {
   const { sendRequest } = useHttpClient();
@@ -10,7 +10,7 @@ const Gallery: React.FC = () => {
   useEffect(() => {
     const fetchGallery: () => Promise<void> = async () => {
       try {
-        const responseData = await sendRequest("/gallery");
+        const responseData = await sendRequest('/gallery');
         setGallery(responseData);
       } catch (err) {}
     };

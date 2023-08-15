@@ -1,8 +1,8 @@
-import type React from "react";
-import { useEffect, useState } from "react";
-import { ServiceTable } from "../../components";
-import { useHttpClient } from "../../hooks/http-hook";
-import { type Service, type ServiceTitle } from "../../types";
+import type React from 'react';
+import { useEffect, useState } from 'react';
+import { ServiceTable } from '../../components';
+import { useHttpClient } from '../../hooks/http-hook';
+import { type Service, type ServiceTitle } from '../../types';
 
 const Services: React.FC = () => {
   const { sendRequest } = useHttpClient();
@@ -12,13 +12,13 @@ const Services: React.FC = () => {
   useEffect(() => {
     const fetchPrices: () => Promise<void> = async () => {
       try {
-        const responseData = await sendRequest("/prices");
+        const responseData = await sendRequest('/prices');
         setPrices(responseData);
       } catch (err) {}
     };
     const fetchServices: () => Promise<void> = async () => {
       try {
-        const responseData = await sendRequest("/services");
+        const responseData = await sendRequest('/services');
         setServices(responseData);
       } catch (err) {}
     };

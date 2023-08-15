@@ -29,13 +29,23 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [
+          "style-loader",
+          "css-loader",
+          "resolve-url-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+        ],
       },
-      { test: /\.svg$/i, use: "file-loader" },
+      { test: /\.(svg|jpg|png)$/i, use: "file-loader" },
     ],
   },
   resolve: {
-    extensions: ["*", ".tsx", ".ts", ".js"],
+    extensions: [".tsx", ".ts", ".js"],
   },
   plugins: [
     new HtmlWebpackPlugin({
