@@ -72,13 +72,17 @@ export const ServiceTable: React.FC<ServiceTableProps> = ({
         }}
       >
         <h2>{service.name}</h2>
-        <div className={`${menuOpened ? 'service-table__title-opened' : ''}`}>
+        <div
+          className={`service-table__arrow ${
+            menuOpened ? 'service-table__arrow-opened' : ''
+          }`}
+        >
           <Arrow width="20" heigth="20" />
         </div>
       </div>
       {menuOpened && (
         <div className="service-table__subservices">
-          {service.subservices
+          {service.subservices && service.subservices?.length > 0
             ? service.subservices.map((subservice) => (
                 <div key={subservice.name}>{renderSubService(subservice)}</div>
             ))

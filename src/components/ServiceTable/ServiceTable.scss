@@ -20,6 +20,15 @@
     }
   }
 
+  &__arrow {
+    padding-top: 0.5rem;
+
+    &-opened {
+      transform: rotate(180deg);
+      padding-top: 0;
+    }
+  }
+
   &__content {
     width: 100%;
     display: flex;
@@ -122,6 +131,14 @@
   .service-table {
     &__content {
       gap: 14px;
+    }
+
+    &__arrow {
+      padding-top: 0.4rem;
+
+      &-opened {
+        padding-bottom: 0.4rem;
+      }
     }
 
     &__title {

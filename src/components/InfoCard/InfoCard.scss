@@ -11,6 +11,10 @@
   box-sizing: border-box;
   white-space: pre-line;
 
+  &__content {
+    line-height: 130%;
+  }
+
   &__general {
     display: flex;
     align-items: flex-start;
