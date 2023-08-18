@@ -11,7 +11,7 @@
   box-sizing: border-box;
   white-space: pre-line;
   transition: all 0.4s;
-  border-radius: 3px;
+  border-radius: 5px;
 
   &__content {
     line-height: 130%;
@@ -25,6 +25,7 @@
     &-description {
       display: flex;
       flex-direction: column;
+      gap: 10px;
 
       &__skills {
         display: flex;
@@ -49,12 +50,11 @@
       }
     }
   }
-}
 
-.info-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(var(--black-default), 0.18);
-  z-index: 10;
+  &:hover {
+    transform: scale(1.05);
+    z-index: 10;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -68,5 +68,10 @@
   .info-card {
     flex: 0 0 100%;
     max-width: 100%;
+
+    &:hover {
+      transform: none;
+      z-index: 10;
+    }
   }
 }

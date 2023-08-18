@@ -32,14 +32,14 @@
   --mobile-tripple-padding: calc(var(--desktop-padding) * 3);
 
   //font-styles
-  --header-style: "Source Serif Pro";
+  --header-style: 'Marck Script', cursive;
   --text-style: "Source Sans Pro", sans-serif;
   --footer-style: "Source Serif Pro";
 
   //font-size
-  --desktop-h1: 40px;
-  --desktop-h2: 36px;
-  --desktop-h3: 32px;
+  --desktop-h1: 44px;
+  --desktop-h2: 40px;
+  --desktop-h3: 36px;
 
   --desktop-t1: 24px;
   --desktop-t2: 20px;
@@ -48,9 +48,9 @@
 
   --desktop-footer: 14px;
 
-  --mobile-h1: 18px;
-  --mobile-h2: 16px;
-  --mobile-h3: 14px;
+  --mobile-h1: 22px;
+  --mobile-h2: 20px;
+  --mobile-h3: 18px;
 
   --mobile-t1: 14px;
   --mobile-t2: 12px;

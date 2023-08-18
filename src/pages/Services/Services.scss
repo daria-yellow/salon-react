@@ -4,7 +4,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: moveInBottomServices 1.4s;
+
+  .service-table {
+    animation: moveInBottomServices 1.4s .3s;
+    animation-fill-mode: backwards;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -22,7 +26,7 @@
 @keyframes moveInBottomServices {
   0% {
     opacity: 0;
-    transform: translateY(5%);
+    transform: translateY(15%);
   }
 
   100% {
