@@ -17,8 +17,16 @@
 
     &-selected {
       border-bottom: 2px solid var(--black-lighter);
-      margin-bottom: -6px;
+      margin-bottom: -5px;
       padding-bottom: 4px;
+    }
+
+    a {
+      transition: all 0.2s;
+    }
+
+    a:hover {
+      transform: scale(1.05);
     }
   }
 

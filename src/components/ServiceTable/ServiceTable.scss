@@ -82,6 +82,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    animation: moveInTopServiceTable 0.3s;
   }
 }
 
@@ -153,5 +154,17 @@
     &__subservices {
       gap: 14px;
     }
+  }
+}
+
+@keyframes moveInTopServiceTable {
+  0% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }

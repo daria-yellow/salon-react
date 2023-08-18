@@ -29,11 +29,13 @@ const AboutUs: React.FC = () => {
           <FormattedMessage id="page.about.text.second" />
         </div>
       </div>
-      <TitleText text={<FormattedMessage id="page.about.title" />} />
-      <div className="about__cards">
-        {managers.map((person) => (
-          <InfoCard info={person} key={person.name} />
-        ))}
+      <div className="about__managers">
+        <TitleText text={<FormattedMessage id="page.about.title" />} />
+        <div className="about__cards">
+          {managers.map((person) => (
+            <InfoCard info={person} key={person.name} />
+          ))}
+        </div>
       </div>
     </div>
   );

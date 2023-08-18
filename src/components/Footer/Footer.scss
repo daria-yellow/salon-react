@@ -7,6 +7,14 @@
   &-icons {
     display: flex;
     gap: 50px;
+
+    a {
+      transition: all 0.2s;
+    }
+
+    a:hover {
+      transform: scale(1.2);
+    }
   }
 }
 

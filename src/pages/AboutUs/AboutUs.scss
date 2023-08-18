@@ -1,5 +1,6 @@
 .about {
   padding: 0 var(--desktop-padding);
+  backface-visibility: hidden;
 
   &__text {
     padding: 0 var(--desktop-padding);
@@ -8,6 +9,8 @@
     gap: 40px;
     margin: 50px 0;
     line-height: 160%;
+    animation: moveInLeftAboutUs 1.4s 0.3s;
+    animation-fill-mode: backwards;
 
     div {
       text-align: center;
@@ -19,6 +22,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+  }
+
+  &__managers {
+    animation: moveInBottomAboutUs 1.3s 0.5s ease-out;
+    animation-fill-mode: backwards;
   }
 }
 
@@ -59,5 +67,29 @@
       margin: 25px 0;
       line-height: 110%;
     }
+  }
+}
+
+@keyframes moveInLeftAboutUs {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottomAboutUs {
+  0% {
+    opacity: 0;
+    transform: translateY(15%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }

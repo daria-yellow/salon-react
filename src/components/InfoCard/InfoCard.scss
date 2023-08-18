@@ -10,6 +10,8 @@
   gap: 15px;
   box-sizing: border-box;
   white-space: pre-line;
+  transition: all 0.4s;
+  border-radius: 3px;
 
   &__content {
     line-height: 130%;
@@ -47,6 +49,12 @@
       }
     }
   }
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(var(--black-default), 0.18);
+  z-index: 10;
 }
 
 @media (max-width: 1280px) {

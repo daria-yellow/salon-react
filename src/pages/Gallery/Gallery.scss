@@ -7,12 +7,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    animation: moveInLeftGallery 1.7s 0.5s;
+    animation-fill-mode: backwards;
 
     img {
       object-fit: cover;
       flex: 0 0 calc(33% - 10px);
       max-width: calc(33% - 10px);
       aspect-ratio: 1/1;
+      transition: all 0.4s;
+      border-radius: 3px;
+    }
+
+    img:hover {
+      transform: scale(1.05);
     }
   }
 }
@@ -48,5 +56,17 @@
 @media (max-width: 568px) {
   .gallery {
     padding: 0 var(--mobile-padding);
+  }
+}
+
+@keyframes moveInLeftGallery {
+  0% {
+    opacity: 0;
+    transform: translateX(-8%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }

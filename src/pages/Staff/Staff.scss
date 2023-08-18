@@ -1,6 +1,8 @@
 .staff {
   padding: 0 var(--desktop-padding);
   box-sizing: border-box;
+  animation: moveInLeftStaff 1.7s 0.5s;
+  animation-fill-mode: backwards;
 
   &__cards {
     display: flex;
@@ -30,5 +32,17 @@
 @media (max-width: 568px) {
   .staff {
     padding: 0 var(--mobile-padding);
+  }
+}
+
+@keyframes moveInLeftStaff {
+  0% {
+    opacity: 0;
+    transform: translateX(-8%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }

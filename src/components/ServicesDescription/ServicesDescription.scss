@@ -46,6 +46,11 @@
     height: 110px;
     border: 2px solid var(--black-default);
     border-radius: 50%;
+    transition: all 0.3s;
+  }
+
+  &__black-circle:hover {
+    transform: scale(1.1);
   }
 }
 
