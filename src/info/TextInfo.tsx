@@ -23,6 +23,8 @@ export const textInfo = {
   'page.landing.services.description.massage': 'масаж',
 
   'page.landing.works.title': 'Наші роботи',
+  'page.landing.works.content':
+    'Змінюйте образ протягом дня і залишайтеся бездоганні в будь-якій ситуації: від ділової зустрічі до романтичної вечері. В нас Ви зможете як підкреслити свою натуральну красу, так і експерементувати з різноманітними стилями.',
   'page.landing.works.button': 'Дивитись все',
 
   'page.landing.products.title': 'Продукція',

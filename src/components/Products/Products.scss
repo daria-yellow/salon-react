@@ -19,7 +19,7 @@
       object-fit: contain;
       padding: 5px 20px;
       transition: all 0.3s;
-      box-shadow: 0 8px 16px rgba(var(--black-default), 0.08);
+      box-shadow: 0 8px 16px var(--black-lightest);
       border: 1px solid var(--white-darkest);
     }
 

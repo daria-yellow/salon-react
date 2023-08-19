@@ -1,6 +1,6 @@
 .info-card {
-  flex: 0 0 calc(33% - 10px);
-  max-width: calc(33% - 10px);
+  flex: 0 0 calc(33% - 20px);
+  max-width: calc(33% - 20px);
   width: 100%;
   transition: 0.3s;
   background-color: var(--white-darkest);
@@ -12,6 +12,7 @@
   white-space: pre-line;
   transition: all 0.4s;
   border-radius: 5px;
+  box-shadow: 0 8px 20px var(--black-lightest);
 
   &__content {
     line-height: 130%;
@@ -53,14 +54,21 @@
 
   &:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 25px var(--black-lighter);
     z-index: 10;
   }
 }
 
 @media (max-width: 1280px) {
   .info-card {
-    flex: 0 0 calc(50% - 8px);
-    max-width: calc(50% - 8px);
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+
+    &:hover {
+      transform: none;
+      box-shadow: none;
+      z-index: 10;
+    }
   }
 }
 
@@ -68,10 +76,5 @@
   .info-card {
     flex: 0 0 100%;
     max-width: 100%;
-
-    &:hover {
-      transform: none;
-      z-index: 10;
-    }
   }
 }

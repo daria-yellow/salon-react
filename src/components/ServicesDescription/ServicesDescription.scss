@@ -47,10 +47,12 @@
     border: 2px solid var(--black-default);
     border-radius: 50%;
     transition: all 0.3s;
+    box-shadow: 0 8px 16px var(--black-lighter);
   }
 
   &__black-circle:hover {
     transform: scale(1.1);
+    box-shadow: 0 10px 20px var(--black-lighter);
   }
 }
 
@@ -100,6 +102,7 @@
 
       &:hover {
         transform: none;
+        box-shadow: 0 8px 16px var(--black-lighter);
       }
     }
 
