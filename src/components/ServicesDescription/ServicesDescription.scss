@@ -58,6 +58,17 @@
 
 @media (max-width: 1024px) {
   .services-description {
+    &__black-circle {
+      &:hover {
+        transform: none;
+        box-shadow: 0 6px 12px var(--black-lighter);
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-description {
     padding: 100px var(--tablet-padding);
 
     &__icons {
@@ -99,11 +110,7 @@
       width: 74px;
       height: 74px;
       border: 1px solid var(--black-default);
-
-      &:hover {
-        transform: none;
-        box-shadow: 0 8px 16px var(--black-lighter);
-      }
+      box-shadow: 0 3px 10px var(--black-lighter);
     }
 
     img {

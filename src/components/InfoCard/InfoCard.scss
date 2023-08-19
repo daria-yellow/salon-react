@@ -66,8 +66,7 @@
 
     &:hover {
       transform: none;
-      box-shadow: none;
-      z-index: 10;
+      box-shadow: 0 8px 20px var(--black-lightest);
     }
   }
 }

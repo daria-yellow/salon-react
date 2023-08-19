@@ -49,6 +49,12 @@
 @media (max-width: 1280px) {
   .products {
     padding: 150px var(--tablet-padding);
+
+    &__content {
+      img:hover {
+        transform: none;
+      }
+    }
   }
 }
 
